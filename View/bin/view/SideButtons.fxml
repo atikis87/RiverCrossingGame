@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane fx:id="VerticalBtnPane" prefHeight="212.0" prefWidth="101.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane prefHeight="212.0" prefWidth="101.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="S_GoatBtn" mnemonicParsing="false" onAction="#OnGoatClicked" prefHeight="116.0" prefWidth="144.0" text="Goat" />
+            <Button fx:id="S_CabbageBtn" mnemonicParsing="false" onAction="#OnCabbageClicked" prefHeight="102.0" prefWidth="136.0" text="Cabbage" GridPane.rowIndex="1" />
+            <Button fx:id="S_WolfBtn" mnemonicParsing="false" onAction="#OnWolfClicked" prefHeight="102.0" prefWidth="140.0" text="Wolf" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</Pane>

@@ -11,9 +11,9 @@ public class Main extends Application
 	@Override
 	public void start( Stage aStage )
 	{
+
 		MainScreen mainScreen = new MainScreen( aStage );
 		Model model = new Model( mainScreen );
-
 		model.Start();		
 	}
 

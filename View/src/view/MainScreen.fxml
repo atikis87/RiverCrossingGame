@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane prefHeight="603.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="111.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="556.0" minWidth="10.0" prefWidth="554.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane fx:id="LeftGrid">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="226.0" minHeight="10.0" prefHeight="142.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="434.0" minHeight="10.0" prefHeight="305.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="156.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="272.0" minHeight="10.0" prefHeight="243.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="290.0" minHeight="10.0" prefHeight="106.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="381.0" minHeight="10.0" prefHeight="201.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="263.0" minHeight="0.0" prefHeight="53.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.rowIndex="3">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="217.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="117.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="222.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="MoveBtn" mnemonicParsing="false" onAction="#OnMoveClicked" prefHeight="37.0" prefWidth="222.0" text="Move" GridPane.columnIndex="2" />
+                        <Button fx:id="CancelBtn" mnemonicParsing="false" prefHeight="38.0" prefWidth="217.0" text="Cancel" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="M_GoatBtn" mnemonicParsing="false" onAction="#OnMiddleGoatClicked" prefHeight="115.0" prefWidth="194.0" text="Goat" />
+                        <Button fx:id="M_CabbageBtn" mnemonicParsing="false" onAction="#OnMiddleCabbageClicked" prefHeight="111.0" prefWidth="212.0" text="Cabbage" GridPane.columnIndex="1" />
+                        <Button fx:id="M_WolfBtn" mnemonicParsing="false" onAction="#OnMiddleWolfClicked" prefHeight="132.0" prefWidth="243.0" text="Wolf" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="RightGrid" GridPane.columnIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="136.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="366.0" minHeight="10.0" prefHeight="327.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
